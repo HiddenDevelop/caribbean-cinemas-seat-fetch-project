@@ -16,3 +16,7 @@ app.add_middleware(
 @app.get("/")
 def welcome_message():
     return get_movies_with_images() 
+
+@app.get("/seatings")
+def get_seatings():
+    return {}
